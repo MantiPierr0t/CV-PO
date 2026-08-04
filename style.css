@@ -12,19 +12,19 @@
 }
 
 #BodyBorder {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
+    display: flex;  
+    flex-flow: column wrap; 
     justify-content: center;
-    align-items: center;
-    border: solid #17abb3 3px;
+    border:  #17abb3 ;
     max-width: 1160px;
     margin: 0 auto;
-    background-color: #f5f5f5;
+    background-color: #f5f5f5 ;
 }
 
 #HeaderBorder {
     display: flex;
+    flex-flow: row   wrap;
+    justify-content: center;
     max-width: 1160px;
     background-color: #17abb3;
 }
@@ -32,29 +32,30 @@
 #MainBorder {
     display: flex;
 }
- 
-#Competences {
-    display: flex;
-}
+.text {
+    color: #17abb3;
+    font-weight: bold;
+    text-decoration: underline;
+ }
 
-#Language {
-    display: flex;
-}
-
-#quality {
-   display: flex;
+.TextHeader {
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;    
 }
 
 #footer {
- display: flex;
+    display: flex;
+    border:  #17abb3 15px solid;
+
 }
 
 #PhotoProfil {
-    width: 150px;
+    width: 100px;
     height: 150px;
     border-radius: 50%;
     border: 2px solid #ffffff;
-    margin: 0 auto;
+    margin: 15px 150px 15px 20px;
     
 }
 
@@ -74,4 +75,9 @@ h2 {
 h3 {
     font-size: 1.2em;
     color: #ffffff;
+}
+time {
+    font-size: 0.9em;
+    color: #17abb3;
+    font-family: "Raleway", sans-serif;
 }

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <style>@font-face { font-family: 'Raleway'; src: url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap') format('woff2'); }</style>
     <title>Mon CV</title>
 </head>
@@ -15,8 +16,8 @@
             <figure>
                 <img src="./photos/photo-profil.jpg" alt="Photo de Pierre OUDOT" id="PhotoProfil">
             </figure>
-            <h1>Pierre OUDOT</h1>
-            <h2>Développeur Web et Web Mobile</h2>
+            <h1 class="TextHeader">Pierre OUDOT</h1>
+            <h2 class="TextHeader">Développeur Web et Web Mobile</h2>
         </section>
         <address>
             <p><a href="https://maps.google.com/" target="_blank"> <img src="./photos/accueil.png" alt="Icône d'adresse" class="icon">Adresse</a></p>            
@@ -28,7 +29,7 @@
     <main id="MainBorder">
         <aside>
             <section>
-                <h3 id="Competences">Compétences</h3>
+                <h3 class="text">Compétences</h3>
                 <ul>
                     <li>HTML5</li>
                     <li>CSS3</li>
@@ -37,7 +38,7 @@
                 </ul>
             </section>
             <section>
-                <h3 id="Language">Langues</h3>
+                <h3 class="text">Langues</h3>
                 <ul>
                     <li><strong>Français</strong> langue maternelle</li>
                     <li><strong>Anglais</strong> niveau scolaire</li>
@@ -45,7 +46,7 @@
                 </ul>
             </section>
             <section >
-                <h3 id="quality">Qualités</h3>
+                <h3 class="text">Qualités</h3>
                 <ul>
                     <li>Esprit d'équipe</li>
                     <li>Autonomie</li>
@@ -55,30 +56,30 @@
             </section>
             <section>
                 <article>
-                    <h3>Profil</h3>
+                    <h3 class="text">Profil</h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                     Sed doloribus iste cumque odio. Sed voluptatum quidem <br>
                     cum quam aut voluptatem.</p>
                 </article>
                 <article>
-                    <h3>Formations</h3>
+                    <h3 class="text">Formations</h3>
                     <h4>Titre professionnel DWWM</h4>
-                    <p>Centre Européen de Formation</p>
+                    <p> <em>Centre Européen de Formation</em></p>
                     <time>2026 - aujourd'hui</time>
                     <h4>BTS Systèmes Numériques Electronique Communicant</h4>
                     <time>2015-2016</time>
-                    <p> Lycée Jean ZAY, Jarny (54)</p>
+                    <p> <em>Lycée Jean ZAY, Jarny (54)</em></p>
                     <h4>Baccalauréat professionnel SEN </h4>
                     <time>2012-2015</time>
-                    <p> Lycée Goerges Baumont, Saint-Dié-Des-Vosges (88)</p>
+                    <p> <em>Lycée Goerges Baumont, Saint-Dié-Des-Vosges (88)</em></p>
                 </article>
                 <article>
-                    <h3>Expériences professionnelles</h3>
+                    <h3 class="text">Expériences professionnelles</h3>
                     <ul>
-                        <li><strong>Réceptionnaire logistique</strong> - Entreprise A <time> mars 2025- aujourd'hui</time></li>
-                        <li><strong>Gendarme</strong> - Gendarmerie Nationale <time>juillet 2020 - fevrier 2025</time></li>
-                        <li><strong>Opérateur de production</strong> - Entreprise B <time>juillet 2019 - juin 2020</time></li>
-                        <li><strong>Intérimaire</strong> - Interim <time>juillet 2016 - juin 2019</time></li>
+                        <li><strong>Réceptionnaire logistique</strong> <time> mars 2025- aujourd'hui</time> <br> <em>Entreprise A</em>  </li>
+                        <li><strong>Gendarme</strong> <time>juillet 2020 - fevrier 2025</time> <br> <em>Gendarmerie Nationale</em></li>
+                        <li><strong>Opérateur de production</strong> <time>juillet 2019 - juin 2020</time> <br> <em>Entreprise B</em></li>
+                        <li><strong>Intérimaire</strong> <time>juillet 2016 - juin 2019</time> <br> <em>Interim</em></li>
                     </ul>
                 </article>
             </section>
