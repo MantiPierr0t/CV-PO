@@ -25,6 +25,7 @@ body {
     padding: 0 20px 0 20px;
     display: flex;
     justify-content: center;
+    max-width: 1160px;
 }
 
 /* Conteneur Principal A4 */
@@ -180,15 +181,26 @@ ul {
     text-decoration: none;
 }
 .headericon{
-    display: flex ;
     text-align: center;
     float: inline-start;
-    width: 30px; 
-    flex-flow: row wrap;
+    width: 30px;    
     text-decoration: none;
+    color: #ffffff;
+}
+.headerflexicon{
+    display: flex;
+    flex-flow: row wrap;
     flex-basis: content;
     justify-content: center;
+    float: inline-start;
+    gap: 50px;
+    row-gap: 150px;
+
 }
 time{
     color: #17abb3;
+}
+.hover:hover{
+    background-color:#e3e3e3;    
+    border-left: #17abb3 1px solid;
 }
