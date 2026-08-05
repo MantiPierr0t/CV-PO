@@ -21,11 +21,12 @@
 }
 
 body {
+    max-width: 1160px;
     background-color: #e3e3e3;
-    padding: 0 20px 0 20px;
+    padding: 0 150px 0 150px;
     display: flex;
     justify-content: center;
-    max-width: 1160px;
+    
 }
 
 /* Conteneur Principal A4 */
@@ -48,6 +49,7 @@ body {
 }
 
 .avatar {
+    flex: 1;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -62,12 +64,14 @@ body {
 }
 
 .header-info h1 {
+    flex: 2;
     font-size: 2.2rem;
     margin-bottom: 5px;
     font-weight: 600;
 }
 
 .header-info h2 {
+    flex: 2;
     font-size: 1.2rem;
     font-weight: 300;
     opacity: 0.9;
@@ -181,30 +185,38 @@ ul {
     text-decoration: none;
 }
 .headericon{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     float: inline-start;
     width: 30px;    
     text-decoration: none;
     color: #ffffff;
 }
+
 .headerflexicon{
     display: flex;
-    flex-flow: row wrap;
+    flex: 3;
+    flex-flow: row wrap-reverse;
     flex-basis: content;
     justify-content: center;
-    float: inline-start;
-    gap: 50px;
-    row-gap: 150px;
-
+    float: right;
+    align-items: normal;
+    
 }
 time{
     color: #17abb3;
 }
 .hover:hover{
     background-color:#e3e3e3;    
-    border-left: #17abb3 1px solid;
+    border-left: #17abb3 5px solid;
 }
-
+figure{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
 figure a{
     cursor: zoom-in;
 }
