@@ -1,0 +1,194 @@
+/* Police d'écriture Lato et Raleway */
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-regular {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #e3e3e3;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Conteneur Principal A4 */
+.cv-container {
+    max-width: 1160px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* En-tête Flexbox */
+.cv-header {
+    background-color: #17abb3; /* Couleur turquoise de la maquette */
+    color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ffffff;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-info h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.header-info h2 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Corps du CV avec Flexbox */
+.cv-body {
+    display: flex;
+    flex: 1; 
+}
+
+/* Colonne de Gauche */
+.sidebar {
+    width: 33%;
+    background-color: #f5f5f5;
+    border-right: 1px solid #e0e0e0;
+    padding: 30px 20px;
+}
+
+/* Colonne de Droite */
+.main-content {
+    width: 67%;
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+/* Styles des Sections */
+.section {
+    margin-bottom: 25px;
+}
+
+.section h3 {
+    color: #00828a;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #00828a;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Éléments de liste */
+ul {
+    list-style: none;
+}
+
+.sidebar ul li, .sidebar p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.skills-list li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-list span {
+    color: #17abb3;
+}
+
+/* Alignement des formations/expériences */
+.item {
+    margin-bottom: 15px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3px;
+}
+
+.item-header h4 {
+    font-size: 1.05rem;
+    color: #333;
+}
+
+.date {
+    font-size: 0.85rem;
+    color: #17abb3;
+    font-style: italic;
+}
+
+.institution, .description {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Bandeau de Pied de page */
+.cv-footer {
+    display: flex;
+    justify-content: center;
+    background-color: #17abb3;
+    margin-top: auto; 
+    height: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.RéseauxProfessionnels {
+    display: flex;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+}
+.icon {
+    display: flex ;
+    width: 30px; 
+    position: center;  
+    text-decoration: none;
+}
+.headericon{
+    display: flex ;
+    text-align: center;
+    float: inline-start;
+    width: 30px; 
+    flex-flow: row wrap;
+    text-decoration: none;
+    flex-basis: content;
+    justify-content: center;
+}
+time{
+    color: #17abb3;
+}
