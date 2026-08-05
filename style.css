@@ -216,3 +216,22 @@ figure img{
 figure img:hover{
     transform:scale(1.05);
 }
+
+nav a{
+    color:white;
+    font-size:30px;
+    text-decoration:none;
+    transition:opacity 0.3s ease;
+}
+
+nav a:hover{
+    opacity:0.7;
+}
+
+#Navfooter{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 10px;
+    justify-content: center;
+}
