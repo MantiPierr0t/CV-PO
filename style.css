@@ -204,3 +204,15 @@ time{
     background-color:#e3e3e3;    
     border-left: #17abb3 1px solid;
 }
+
+figure a{
+    cursor: zoom-in;
+}
+
+figure img{
+    transition:0.3s;
+}
+
+figure img:hover{
+    transform:scale(1.05);
+}
