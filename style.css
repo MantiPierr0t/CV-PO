@@ -22,7 +22,7 @@
 
 body {
     background-color: #e3e3e3;
-    padding: 40px 20px;
+    padding: 0 20px 0 20px;
     display: flex;
     justify-content: center;
 }
@@ -181,9 +181,13 @@ ul {
 }
 .headericon{
     display: flex ;
+    text-align: center;
+    float: inline-start;
     width: 30px; 
     flex-flow: row wrap;
     text-decoration: none;
+    flex-basis: content;
+    justify-content: center;
 }
 time{
     color: #17abb3;
