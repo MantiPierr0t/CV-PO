@@ -10,97 +10,139 @@
     <style>@font-face { font-family: 'Raleway'; src: url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap') format('woff2'); }</style>
     <title>Mon CV</title>
 </head>
-<body id="BodyBorder">
-    <header id="HeaderBorder">
-        <section id="Container">
-            <figure>
-                <img src="./photos/photo-profil.jpg" alt="Photo de Pierre OUDOT" id="PhotoProfil">
-            </figure>
-            <h1 class="TextHeader">Pierre OUDOT <br> Développeur Web et Web Mobile</h1>
-        </section>
-        <address class="FlexAddress">
-            <p><a href="https://maps.google.com/" target="_blank"> <img src="./photos/accueil.png" alt="Icône d'adresse" class="icon">Adresse</a></p>            
-            <p><img src="./photos/telephone.png" alt="Icône de téléphone" class="icon">Téléphone </p>
-        </address>
-        <address class="FlexAddress">
-            <p><img src="./photos/enveloppe.png" alt="Icône d'email" class="icon">Email </p>
-            <p><img src="./photos/voiture.png" alt="Icône de permis de conduire" class="icon">Permis B</p>
-        </address>
-    </header>
-    <main id="MainBorder">
-        <aside id="aside1">
-            <section>
-                <h3 class="text1">Compétences</h3>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>PHP</li>
-                </ul>
-            </section>
-            <section>
-                <h3 class="text1">Langues</h3>
-                <ul>
-                    <li><strong>Français</strong> langue maternelle</li>
-                    <li><strong>Anglais</strong> niveau scolaire</li>
-                    <li><strong>Allemand</strong> notions</li>
-                </ul>
-            </section>
-            <section >
-                <h3 class="text2">Qualités</h3>
-                <ul>
-                    <li>Esprit d'équipe</li>
-                    <li>Autonomie</li>
-                    <li>Organisation</li>
-                    <li>Créativité</li>
-                </ul>
-            </section>         
-            <section>
-                <h3 class="text2">Centres d'intérêt</h3>
-                <ul>
-                    <li>Informatique</li>
-                    <li>Jeux vidéo</li>
-                    <li>Sports</li>
-                    <li>Voyages</li>
-                </ul>  
-            </section>
-        </aside>
-        <aside id="aside2">
-            <section>
-                <article>
-                    <h3 class="text">Profil</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+<body>
+    <div class="cv-container">        
+        <header class="cv-header">
+            <div class="avatar-container">
+                <div class="avatar">
+                    <img src="./photos/photo-profil.jpg" alt="Photo de profil">
+                </div>
+            </div>
+            <div class="header-info">
+                <h1>Pierre Oudot</h1>
+                <h2>Développeur Web et Web Mobile</h2>
+            </div>
+            <div >
+                <p><a href="https://maps.google.com/" target="_blank"> <img src="./photos/accueil.png" alt="Icône d'adresse" class="headericon">Adresse</a></p>            
+                <p><img src="./photos/telephone.png" alt="Icône de téléphone" class="headericon">Téléphone </p>
+                <p><img src="./photos/enveloppe.png" alt="Icône d'email" class="headericon">Email </p>
+                <p><img src="./photos/voiture.png" alt="Icône de permis de conduire" class="headericon">Permis B</p>
+            </div>
+        </header>
+        <!-- Corps du CV -->
+        <div class="cv-body">
+            <!-- Colonne Gauche (Étroite) -->
+            <aside class="sidebar">
+                <section class="section">
+                    <h3>Compétences</h3>
+                    <ul class="skills-list">
+                        <li>HTML <span>★★★★★</span></li>
+                        <li>CSS <span>★★★★☆</span></li>
+                        <li>JavaScript <span>★★★☆☆</span></li>
+                        <li>PHP <span>★★☆☆☆</span></li>
+                    </ul>
+                </section>
+                <section class="section">
+                    <h3>Langues</h3>
+                    <p><strong>Français</strong> Langue maternelle</p>
+                    <p><strong>Anglais</strong> Professionnel</p>
+                    <p><strong>Allemand</strong> Notion </p>
+                </section>
+                <section class="section">
+                    <h3>Qualités</h3>
+                    <ul>
+                        <li>Esprit d'équipe</li>
+                        <li>Autonomie</li>
+                        <li>Organisation</li>
+                        <li>Créativité</li>
+                    </ul>
+                </section>
+                <section class="section">
+                    <h3>Centres d'intérêt</h3>
+                    <p>Voyages, Jeux vidéo, Sport</p>
+                </section>
+            </aside>
+            <!-- Colonne Droite (Large) -->
+            <main class="main-content">
+                <section class="section">
+                    <h3>Profil</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                     Sed doloribus iste cumque odio. Sed voluptatum quidem <br>
                     cum quam aut voluptatem.</p>
-                </article>
-                <article>
-                    <h3 class="text">Formations</h3>
-                    <h4>Titre professionnel DWWM</h4>
-                    <p><em>Centre Européen de Formation</em></p>
-                    <time>2026 - aujourd'hui</time>
-                    <h4>BTS Systèmes Numériques Electroniques Communications</h4>
-                    <time>2015-2016</time>
-                    <p><em>Lycée Jean ZAY, Jarny (54)</em></p>
-                    <h4>Baccalauréat professionnel SEN </h4>
-                    <time>2012-2015</time>
-                    <p><em>Lycée Goerges Baumont, Saint-Dié-Des-Vosges (88)</em></p>
-                </article>
-                <article>
-                    <h3 class="text">Expériences professionnelles</h3>
-                    <ul>
-                        <li><strong>Réceptionnaire logistique</strong> <time> mars 2025- aujourd'hui</time> <br> <em>Entreprise A</em>  </li>
-                        <li><strong>Gendarme</strong> <time>juillet 2020 - fevrier 2025</time> <br> <em>Gendarmerie Nationale</em></li>
-                        <li><strong>Opérateur de production</strong> <time>juillet 2019 - juin 2020</time> <br> <em>Entreprise B</em></li>
-                        <li><strong>Intérimaire</strong> <time>juillet 2016 - juin 2019</time> <br> <em>Interim</em></li>
-                    </ul>
-                </article>
-            </section>
-        </aside>
-    </main>
-    <footer id="footer">
-        <a href="https://www.linkedin.com/public-profile/settings/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3BNfUqimibRE%2BuRpTVA8ih2A%3D%3D" target="_blank"> <img src="./photos/linkedin.png" alt=" logo LinkedIn rédirection vers profil Linkedin" class="RéseauxProfessionnels"> </a>
-        <a href="https://github.com/MantiPierr0t/CV-PO" target="_blank"> <img src="./photos/logo-github.png" alt=" logo GitHub rédirection vers profil GitHub" class="RéseauxProfessionnels"></a>
-        <time datetime="2026-08-04">Mis à jour le 04 août 2026</time>
-    </footer>
+                </section>
+                <section class="section">
+                    <h3>Formations</h3>
+                    <div class="item">
+                        <section class="item-header">
+                            <h4>Titre professionnel DWWM</h4> <br> <p><em>Centre Européen de Formation</em></p>
+                            <time>2026 - aujourd'hui</time>
+                        </section>
+                    </div>
+                    <div class="item">
+                        <section class="item-header">
+                            <h4>BTS SNEC</h4> <br><p><em>Lycée Goerges Baumont, Saint-Dié-Des-Vosges (88)</em></p>
+                            
+                            <time>2012-2015</time>
+                        </section>
+                    </div>
+                    <div class="item">
+                        <section class="item-header">
+                            <h4>Baccalauréat professionnel SEN</h4> <br><p><em>Lycée Jean ZAY, Jarny (54)</em></p>
+                            
+                            <time>2015-2016</time>
+                        </section>
+                    </div>
+
+                </section>
+                <section class="section">
+                    <h3>Stages</h3>
+                    <div class="item">
+                        <div class="item-header">
+                            <h4>Stage Intermitant du spéctacle</h4>
+                            <span class="date">1 mois - 2015</span>
+                        </div>
+                        <p class="institution">Entreprise d'accueil</p>
+                    </div>
+                    <div class="item">
+                        <div class="item-header">
+                            <h4>Stage Informatique / Réseaux</h4>
+                            <span class="date">1 mois - 2014</span>
+                        </div>
+                        <p class="institution">Entreprise d'accueil</p>
+                    </div>
+                </section>
+                <section class="section">
+                    <h3>Expérience Professionnelle</h3>
+                    <div class="item">
+                        <div class="item-header">
+                            <h4><strong></strong>Réceptionnaire Logistique</strong></h4>
+                            <time datetime="2025-04-03"> Du 03/04/2025 à aujourd'hui</time>
+                        </div>
+                        <p class="description">Autodistribution, Distré (49)</p>
+                        <div class="item-header">
+                            <h4><strong></strong>Gendarme</strong></h4>
+                            <time datetime="2020-07-06"> Du 06/07/2020 à 02/04/2025</time>                            
+                        </div>
+                        <p class="description">Gendarmerie Nationale, Eguilles (13)</p>        
+                        <div class="item-header">
+                            <h4><strong></strong>Opérateur de production</strong></h4>
+                            <time datetime="2019-07-01"> Du 01/07/2019 à 28/06/2020</time> 
+                        </div>
+                        <p class="description">Société Ermitage, Bulgnéville (88)</p>
+                        <div class="item-header">
+                            <h4><strong></strong>Intérimair</strong></h4>
+                            <time datetime="2016-07-18"> Du 18/07/2016 à 15/06/2019</time>
+                        </div>
+                        <p class="description">Intérime, Vittel (88)</p>
+                    </div>                    
+                </section>
+            </main>
+        </div>
+        <footer class="cv-footer">
+            <a href="https://www.linkedin.com/public-profile/settings/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3BNfUqimibRE%2BuRpTVA8ih2A%3D%3D" target="_blank"> <img src="./photos/linkedin.png" alt=" logo LinkedIn rédirection vers profil Linkedin" class="RéseauxProfessionnels"> </a>
+            <a href="https://github.com/MantiPierr0t/CV-PO" target="_blank"> <img src="./photos/logo-github.png" alt=" logo GitHub rédirection vers profil GitHub" class="RéseauxProfessionnels"></a>
+        </footer>
+    </div>
+
 </body>
 </html>
